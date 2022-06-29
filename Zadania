@@ -1,0 +1,227 @@
+//zadanie1
+
+using System;
+
+namespace Waarehouse
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int a = 5;
+            int b = 5;
+
+            if (a == b)
+            {
+
+                Console.WriteLine("5 i 5 są równe");
+            }
+
+        }
+    }
+}
+
+
+//zadanie 2
+
+using System;
+
+namespace Waarehouse
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Podaj liczbę od 1 do 100");
+            
+            int var1 = Int32.Parse(Console.ReadLine());
+            
+            if (var1 % 2 == 0)
+            {
+                Console.WriteLine($"{ var1} jest parzysta" );
+
+            }
+            else
+            {
+                Console.WriteLine($"{var1} jest nieparzysta");
+            }
+
+        }
+    }
+}
+
+//zadanie 3
+
+using System;
+
+namespace Waarehouse
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Podaj liczbę od -100 do 100");
+
+            double var1 = double.Parse(Console.ReadLine());
+            
+            if (var1 < 0)
+            {
+                Console.WriteLine($"{ var1} jest liczbą ujemną" );
+
+            }
+            else
+            {
+                Console.WriteLine($"{var1} jest liczbą dodatnią");
+            }
+
+        }
+    }
+}
+
+
+//zadanie 4
+
+using System;
+
+namespace Waarehouse
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Podaj rok");
+
+            int var1 = int.Parse(Console.ReadLine());
+            
+            if (var1 % 4 == 0)
+            {
+                Console.WriteLine($"{ var1} jest rokiem przestępnym" );
+
+            }
+            else
+            {
+                Console.WriteLine($"{var1} nie jest rokiem przestępnym");
+            }
+
+        }
+    }
+}
+
+//zadanie 5
+
+using System;
+
+namespace Waarehouse
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Podaj swój wiek");
+
+            int var1 = int.Parse(Console.ReadLine());
+            
+            if (var1 >= 21 )
+            {
+                Console.WriteLine("Możesz zostać posłem" );
+
+            }
+            else
+            {
+                Console.WriteLine("Nie możesz zostać posłem");
+            }
+
+        }
+    }
+}
+
+
+//zadanie 6
+
+using System;
+
+namespace Waarehouse
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Podaj swój wzrost");
+
+            double var1 = double.Parse(Console.ReadLine());
+
+            if (var1 <=139)
+            {
+                Console.WriteLine("Jesteś dzieckiem");
+
+            }
+
+            else if (var1 >= 140 && var1 <= 150)
+            {
+                Console.WriteLine("Jesteś krasnoludem");
+
+            }
+            else if (var1 >= 151 && var1 <= 170)  
+            {
+                Console.WriteLine("Jesteś niziołkiem");
+            }
+
+            else if (var1 >= 171 && var1 <= 190)
+            {
+                Console.WriteLine("Jesteś człowiekiem");
+            }
+
+            else if (var1 >=191)
+            {
+                Console.WriteLine("Jesteś olbrzymem");
+            }
+
+        }
+    }
+}
+
+// zadanie 7
+
+using System;
+
+namespace Waarehouse
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Podaj pierwszą liczbę");
+
+            int var1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Podaj drugą liczbę");
+
+            int var2 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Podaj trzecią liczbę");
+
+            int var3 = int.Parse(Console.ReadLine());
+
+            if (var1 > var2 && var1 > var3)
+            {
+                Console.WriteLine($"{var1} jest największa z podanych");
+            }
+            else if (var2 > var1 && var2 > var3)
+            {
+                Console.WriteLine($"{var2} jest największa z podanych");
+            }
+            else
+            {
+                Console.WriteLine($"{var3} jest największa z podanych");
+            }
+        }
+    }
+}
+
+//zadanie 8
