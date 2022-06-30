@@ -96,10 +96,10 @@ namespace Waarehouse
             Console.WriteLine("Podaj rok");
 
             int var1 = int.Parse(Console.ReadLine());
-            
-            if (var1 % 4 == 0)
+
+            if ((var1 % 4 == 0 && var1 % 100 !=0 ) || var1 % 400 == 0)
             {
-                Console.WriteLine($"{ var1} jest rokiem przestępnym" );
+                Console.WriteLine($"{var1} jest rokiem przestępnym");
 
             }
             else
@@ -225,3 +225,91 @@ namespace Waarehouse
 }
 
 //zadanie 8
+
+using System;
+
+namespace Waarehouse
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Podaj wynik z matury z matematyki");
+
+            int math1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Podaj wynik z matury z fizyki");
+
+            int physics1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Podaj wynik z matury z chemii");
+
+            int chemistry1 = int.Parse(Console.ReadLine());
+
+            int sumOfPoints = math1 + physics1 + chemistry1;
+
+            if ((math1 > 70 && physics1 > 55 && chemistry1 > 45) || (math1 + physics1 + chemistry1) > 180)
+            {
+                Console.WriteLine("Kandydat dopuszczony do rekrutacji");
+            }
+
+            else if (math1 + physics1 >150 || math1 + chemistry1 >150)
+            {
+                Console.WriteLine("Kandydat dopuszczony do rekrutacji");
+            }
+
+            else
+            {
+                Console.WriteLine("Kandydat nie dopuszczony do rekrutacji");
+            }
+
+        }
+    }
+}
+
+//zadanie 9 
+
+using System;
+
+namespace Waarehouse
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Podaj temperaturę");
+
+            double temp1 = double.Parse(Console.ReadLine());
+
+            if (temp1 < 0 )
+            {
+                Console.WriteLine("Cholernie piździ");
+            }
+            else if (temp1 >= 0 && temp1 < 10)
+            {
+                Console.WriteLine("Zimno");
+            }
+            else if (temp1 >= 10 && temp1 < 20)
+            {
+                Console.WriteLine("Chłodno");
+            }
+            else if (temp1 >= 20 && temp1 < 30)
+            {
+                Console.WriteLine("W sam raz");
+            }
+            else if (temp1 >= 30 && temp1 < 40)
+            {
+                Console.WriteLine("Zaczyna być słabo, bo gorąco");
+            }
+            else
+            {
+                Console.WriteLine("A weź wyprowadzam się na Alaskę");
+            }
+        }
+    }
+}
+
+//zadanie 10
+
