@@ -1,4 +1,4 @@
-//zadanie1
+//Zadanie1
 
 using System;
 
@@ -23,7 +23,7 @@ namespace Waarehouse
 }
 
 
-//zadanie 2
+//Zadanie2
 
 using System;
 
@@ -52,7 +52,7 @@ namespace Waarehouse
     }
 }
 
-//zadanie 3
+//Zadanie3
 
 using System;
 
@@ -82,7 +82,7 @@ namespace Waarehouse
 }
 
 
-//zadanie 4
+//Zadanie4
 
 using System;
 
@@ -111,7 +111,7 @@ namespace Waarehouse
     }
 }
 
-//zadanie 5
+//Zadanie5
 
 using System;
 
@@ -141,7 +141,7 @@ namespace Waarehouse
 }
 
 
-//zadanie 6
+//Zadanie6
 
 using System;
 
@@ -186,7 +186,7 @@ namespace Waarehouse
     }
 }
 
-// zadanie 7
+//Zadanie7
 
 using System;
 
@@ -224,7 +224,7 @@ namespace Waarehouse
     }
 }
 
-//zadanie 8
+//Zadanie8
 
 using System;
 
@@ -268,7 +268,7 @@ namespace Waarehouse
     }
 }
 
-//zadanie 9 
+//Zadanie9 
 
 using System;
 
@@ -311,5 +311,208 @@ namespace Waarehouse
     }
 }
 
-//zadanie 10
+//Zadanie10
 
+using System;
+
+namespace Waarehouse
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Podaj długość pierwszego boku");
+            double side1 = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Podaj długość drugiego boku");
+            double side2 = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Podaj długość trzeciego boku");
+            double side3 = double.Parse(Console.ReadLine());
+
+
+            if ((side1 > side2 && side1> side3) && (side3 + side2 > side1))
+            {
+                Console.WriteLine("Można zbudować trójkąt");
+            }
+
+            else if ((side2 > side3 && side2 > side1 ) && (side2 < side1 + side3))
+                {
+                Console.WriteLine("Można zbudować trójkąt");
+
+            }
+
+            else if ((side3 > side1 && side3 > side2) && (side3 < side1 + side2))
+            {
+                Console.WriteLine("Można zbudować trójkąt");
+            }
+            else
+            {
+                Console.WriteLine("Nie można zbudować trojkąta");
+            }
+            
+        }
+    }
+}
+
+//Zadanie11
+
+using System;
+
+namespace Waarehouse
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Podaj swoją ocenę");
+            double ocena1 = double.Parse(Console.ReadLine());
+
+            switch (ocena1)
+
+            {
+                case 1: 
+                   Console.WriteLine("Niedostateczny");
+                    break;
+           
+                case 2: 
+                   Console.WriteLine("Dopuszczający");
+                break;
+
+                case 3:
+                   Console.WriteLine("Dostateczny");
+                break;
+
+                case 4:
+                    Console.WriteLine("Dobry");
+                break;
+
+                case 5:
+                    Console.WriteLine("Bardzo Dobry");
+                break;
+
+                case 6:
+                    Console.WriteLine("Celujący");
+                    break;
+                default:
+                    Console.WriteLine("Podano niepoprawną liczbę. Proszę podać liczbę między 1 a 6");
+                    break;
+            }
+
+        }
+    }
+}
+
+//Zadanie12
+
+using System;
+
+namespace Waarehouse
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Podaj numer dnia tygodnia");
+            double dayOfWeek = double.Parse(Console.ReadLine());
+
+            switch (dayOfWeek)
+
+            {
+                case 1: 
+                   Console.WriteLine("Poniedziałek");
+                    break;
+           
+                case 2: 
+                   Console.WriteLine("Wtorek");
+                break;
+
+                case 3:
+                   Console.WriteLine("Środa");
+                break;
+
+                case 4:
+                    Console.WriteLine("Czwartek");
+                break;
+
+                case 5:
+                    Console.WriteLine("Piątek");
+                break;
+
+                case 6:
+                    Console.WriteLine("Sobota");
+                    break;
+
+                case 7:
+                    Console.WriteLine("Niedziela");
+                    break;
+
+                default:
+                    Console.WriteLine("Podano niepoprawną liczbę. Proszę podać liczbę między 1 a 7");
+                    break;
+            }
+
+        }
+    }
+}
+
+//Zadanie13
+
+using System;
+
+namespace Waarehouse
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Podaj pierwszą liczbę");
+            double var1 = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Podaj drugą liczbę");
+            double var2 = double.Parse(Console.ReadLine());
+
+            Console.Write("Podaj numer operacji do wykonania:\r\n \r\n 1. Dodawanie \r\n 2. Odejmowanie \r\n 3. Mnożenie \r\n 4. Dzielenie \r\n");
+            double var3 = double.Parse(Console.ReadLine());
+
+            switch (var3)
+            {
+                case 1:
+                    Console.WriteLine("Twój wynik to " + (var1 + var2));
+                    break;
+
+                case 2:
+                    Console.WriteLine("Twój wynik to " + (var1 - var2));
+                    break;
+
+                case 3:
+                    Console.WriteLine("Twój wynik to " + (var1 * var2));
+                    break;
+
+                case 4:
+
+                    if (var2 == 0)
+                    {
+                        Console.WriteLine("Nie można dzielić przez 0. Podaj inną liczbę.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Twój wynik to " + (var1 / var2));
+                    }
+                    
+                        
+                        break;
+                        default:
+                    Console.WriteLine("Podano Niepoprawny numer operacji. Podaj liczbę między 1 a 4");
+                        break;
+                    
+            }
+                
+
+        }
+    }
+}
